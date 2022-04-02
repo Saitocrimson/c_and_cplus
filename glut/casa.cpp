@@ -32,7 +32,7 @@ void circulo()
 
     glEnd();
     glPopMatrix();
-    glFlush();
+    //glFlush();
 }
 void parede()
 {
@@ -47,7 +47,7 @@ void parede()
         glVertex3f(-0.3f,-0.3f, 0.0f);
     glEnd();
     glPopMatrix();
-    glFlush();
+   // glFlush();
 
 }
 void porta()
@@ -63,7 +63,7 @@ void porta()
         glVertex3f(-0.1f,-0.3f, 0.0f);
     glEnd();
     glPopMatrix();
-    glFlush();
+   // glFlush();
 
 }
 void tronco()
@@ -79,7 +79,7 @@ void tronco()
           glVertex3f(0.0f,-0.3f, 0.0f);
     glEnd();
     glPopMatrix();
-    glFlush();
+  //  glFlush();
 
 
 }
@@ -96,7 +96,7 @@ void chao()
           glVertex3f(-1.9f,-0.6f, 0.0f);
     glEnd();
     glPopMatrix();
-    glFlush();
+  //  glFlush();
 }
 
 void telhado()
@@ -116,7 +116,7 @@ void telhado()
 
     glEnd();
     glPopMatrix();
-    glFlush();
+   // glFlush();
 }
 
 void macaneta()
@@ -129,7 +129,19 @@ void macaneta()
           glVertex2f(0.1,0.0);  // primeiro vértice
           glVertex2f(0.1,0.1); // segundo vértice
      glEnd();
-     glFlush();
+    // glFlush();
+}
+void pontos()
+{
+    glColor3f(1.0f, 0.0f, 0.0f);
+    glPointSize(10);
+	 GLfloat pt[2] = {0.930, 0.740};
+            glBegin(GL_POINTS);
+            glVertex2f(0.810,0.820);  
+           glVertex2f(0.820,0.530);    
+            glVertex2fv(pt);         
+    glEnd();
+
 }
 
 void inicia()
@@ -144,7 +156,7 @@ void desenha()
 {
     glClear(GL_COLOR_BUFFER_BIT);
 
-//parede da casa
+ //parede da casa
     parede();
 //porta
     porta();
@@ -161,17 +173,23 @@ void desenha()
 
 //telhado
     telhado();
-    //ceu*/
-
+    //ceu
+//macaneta da porta
     macaneta();
+//frutas das arvores
+    pontos();
+
+glFlush();
+
 }
 
 
 int main(int argc, char** argv)
 {
     glutInit(&argc, argv);
-    glutInitWindowSize(800,640);
-    glutInitWindowPosition(10,10);
+
+    glutInitWindowPosition(5,5);
+    glutInitWindowSize(450,450);
     glutInitDisplayMode(GLUT_SINGLE | GLUT_RGB);
     glutCreateWindow("casa");
     glutDisplayFunc(desenha);
