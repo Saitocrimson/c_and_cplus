@@ -1,3 +1,5 @@
+//trabalho feito em dupla com o @Kazuto-neves
+
 #include<Windows.h>
 #include <GL/glut.h>
 #include <GL/freeglut.h>
