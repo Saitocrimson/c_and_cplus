@@ -11,3 +11,5 @@ funções para o cálculo de área de cada figura e para um menu de escolha.
 pelo segundo ou não.
 * 5) Crie uma função que receba três valores, 'a', 'b' e 'c', que são os coeficientes de uma
 equação do segundo grau e retorne o valor do delta, que é dado por 'b² - 4ac'.
+* 6) Faça uma função que receba um número inteiro e positivo N como parâmetro e
+retorne a soma dos números inteiros existentes entre o número 1 e N (Inclusive).
