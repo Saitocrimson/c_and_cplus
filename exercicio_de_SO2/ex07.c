@@ -23,7 +23,7 @@ void conta(int a, int b, int c)
     int solucao;
     min(a);
     solucao=seg(b)+hora(a)+c;
-    printf("%d", solucao);
+    printf("o resultado eh %d s\n", solucao);
 }
 
 void ler (int *a, int *b, int *c)
