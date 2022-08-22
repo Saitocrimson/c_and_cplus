@@ -13,3 +13,11 @@ pelo segundo ou não.
 equação do segundo grau e retorne o valor do delta, que é dado por 'b² - 4ac'.
 * 6) Faça uma função que receba um número inteiro e positivo N como parâmetro e
 retorne a soma dos números inteiros existentes entre o número 1 e N (Inclusive).
+* 7)Faça Crie uma função que receba três números inteiros como parâmetros,
+representando horas, minutos e segundos e os converta em segundos. Exemplo: 2h,
+40min e 10seg correspondem a 9.610 segundos.
+* 8) Faça uma função que receba como parâmetro o raio de uma esfera, calcule e
+mostre no programa principal o seu volume: v = 4/3 * R3.
+* 9) Crie uma função que receba como parâmetro a altura (alt) e o sexo de uma pessoa e
+retorne o seu peso ideal. Para homens, deverá calcular o peso ideal usando a fórmula:
+peso ideal = 72.7 * alt - 58; para mulheres: peso ideal = 62.1 * alt - 44.7.
