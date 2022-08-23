@@ -31,3 +31,5 @@ Xa sem utilizar funções ou operadores de potência prontos.
 quantidade de valores pares em X.
 * 15)Faça uma função que receba um vetor X de 20 de números reais como parâmetro
 e retorne a soma dos elementos de X.
+* 16)Crie uma função que gere e mostre os dez primeiros números primos acima de
+100.obs: fiz com 20 primeiros números
