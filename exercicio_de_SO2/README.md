@@ -21,3 +21,11 @@ mostre no programa principal o seu volume: v = 4/3 * R3.
 * 9) Crie uma função que receba como parâmetro a altura (alt) e o sexo de uma pessoa e
 retorne o seu peso ideal. Para homens, deverá calcular o peso ideal usando a fórmula:
 peso ideal = 72.7 * alt - 58; para mulheres: peso ideal = 62.1 * alt - 44.7.
+* 10) Elabore uma função que leia um número não determinado de valores positivos e
+retorne a média aritmética desses valores.
+* 11) Faça uma função que receba um valor inteiro e positivo, calcule e mostre o seu
+fatorial.
+* 12) Crie uma função que receba como parâmetro dois valores X e A, calcule e retorne
+Xa sem utilizar funções ou operadores de potência prontos.
+* 14) Elabore uma função que receba um vetor X de 15 números inteiros e retorne a
+quantidade de valores pares em X.
