@@ -23,7 +23,6 @@ void le(double *x)
 
 int main ()
 {
-  int a, b, c;
   double r=0;
    le(&r);
    esfera(r,&r);
