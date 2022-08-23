@@ -17,7 +17,9 @@ void ler(int *n)
 void operacao(int n)
 {
     int soma=1;
+    do{
     ler(&n);
+    }while(n<0);
     printf("o fatorial de %d eh %d\n",n, fatorial(n,soma));
 }
 
