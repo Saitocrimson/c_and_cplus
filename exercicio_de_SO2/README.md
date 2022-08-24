@@ -33,3 +33,11 @@ quantidade de valores pares em X.
 e retorne a soma dos elementos de X.
 * 16)Crie uma função que gere e mostre os dez primeiros números primos acima de
 100.obs: fiz com 20 primeiros números
+* 18)  Crie um programa que receba três valores (Obrigatoriamente maiores que zero),
+representando as medidas dos três lados de um triângulo. Elabore funções para:
+● Determinar se esses lados formam um triângulo (Sabe-se que, para ser um
+triângulo, a medida de um lado qualquer deve ser inferior ou igual à soma das
+medidas dos outros dois)
+● Determinar e mostrar o tipo de triângulo (equilátero, isósceles ou escaleno),
+caso as medidas formem um triângulo.
+Todas as mensagens deverão ser mostradas no programa principal.
