@@ -16,7 +16,7 @@ int media_filhos(int filho[], int qtd)
 void menor(double salario2[],int qtd)
 {
 
-    int per=0;
+    double per=0;
     printf("\nO percentual de salarios menores que 380 foram: ");
    for(int i=0;i<qtd;i++){
       if(salario2[i]<380){
@@ -24,7 +24,7 @@ void menor(double salario2[],int qtd)
       }
     }
     
-    printf("%d",(per*100)/qtd);
+    printf("%.2lf",(per*qtd)/100);
 }
 
 
@@ -64,10 +64,9 @@ void arruma(double salario2[], int qtd)
 void ler(double salario[], double salario2[], int filhos[])
 {
     int x=1,pessoa=0,fil;
-    char stop[2]="n";
+    
     double t;
     printf("Digite -1 para encerrar\n");
-    do{
     do{
         printf("Digite o salario da pessoa %d\n", pessoa+1);
         scanf("%lf", &salario[pessoa]);
@@ -81,17 +80,15 @@ void ler(double salario[], double salario2[], int filhos[])
         else pessoa++;
         if(salario[pessoa-1]==-1.0)x=verdade;
     }while(x==falso);
-          printf("deseja sair?Digite s para confirmar\n");
-          scanf("%s",stop);
+          
           arruma(salario2,pessoa);
           t=media_salario(salario,pessoa);
           fil=media_filhos(filhos,pessoa);
           printf("A media de salario deu aproximadamente: %.2lf, sendo o salario %.2lf o maior",t +resto(t,pessoa),salario2[pessoa]);
           menor(salario2, pessoa);
           printf("\nA media de filhos deu aproximadamente: %d",fil);
-      }while(stop==para);
+     
 }
-
 int main()
 {
    double salario[1000], salario2[1000];
