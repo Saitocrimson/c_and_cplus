@@ -1,7 +1,7 @@
 #include <stdio.h>
 #define verdade 0
 #define falso 1
-#define para "s"
+
 
 
 int media_filhos(int filho[], int qtd)
@@ -63,7 +63,7 @@ void arruma(double salario2[], int qtd)
 
 void ler(double salario[], double salario2[], int filhos[])
 {
-    int x=1,pessoa=0,fil;
+    int x=falso,pessoa=0,fil;
     
     double t;
     printf("Digite -1 para encerrar\n");
