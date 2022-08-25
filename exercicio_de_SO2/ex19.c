@@ -33,9 +33,8 @@ void arruma(double cops[])
   }
 void ler(char meses[][12], double temp[],double cops []){
   for(int i=0; i<12;i++){
-printf("Digite o mes\n");
-scanf("%s", meses[i]);
-printf("Digite a temperatura\n");
+printf("Digite a temperatura do mes %s\n", meses[i]);
+
   scanf("%lf", &temp[i]);
 cops[i]=temp[i];
 
@@ -43,12 +42,10 @@ cops[i]=temp[i];
 }
 }
 int main() {
-    char meses[12][12];
+    char meses[12][12]={"janeiro", "fevereiro", "marco","abril", "maio", "junho", "julho", "agosto", "setembro","outubro","novembro","dezembro"};
     double temp[12], cops[12];
     ler(meses, temp,cops);
     arruma(cops);
     compara(cops,temp,meses);
     return 0;
 }
-  
-  
