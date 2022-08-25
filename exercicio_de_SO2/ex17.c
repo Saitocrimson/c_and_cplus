@@ -73,10 +73,13 @@ void ler(double salario[], double salario2[], int filhos[])
          if(salario[pessoa]==-1.0)break;
         printf("Digite quantos filhos tem a pessoa %d\n", pessoa+1);
         scanf("%d", &filhos[pessoa]);
+        
         if(filhos[pessoa]==-1)break;
-         salario2[pessoa]=salario[pessoa];
-        else pessoa++;
-        if(salario[pessoa-1]==-1.0)x=verdade;
+        else{
+            salario2[pessoa]=salario[pessoa];
+        } pessoa++;
+        
+       
     }while(x==falso);
           
           arruma(salario2,pessoa);
