@@ -19,7 +19,7 @@ int somar(int ini, int v[1000]){
 
 int main(int argc, char *argv[])
 {
-  int id,soma=0, v[1000],i,dd;
+  int id,soma=0, v[1000],i;
   for(i=0;i<1000;i++)
    {
           v[i]=i;
@@ -59,7 +59,7 @@ int main(int argc, char *argv[])
 
   if(id==3) {
 
-          int t,o,p,s;
+          int t=0,o=0,p=0,s=0;
      	  soma+=somar(id,v);
      	  s=soma+t+o+p;
           
