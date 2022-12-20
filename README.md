@@ -1,4 +1,7 @@
 # c_and_cplus
 
-* exercícios de c e c++
-* possui tb trabalhos da matéria de poo e prc
+Exercicios e trabalhos feito em c e c++ para as materias de :
+* PRC
+* POO
+* ICG
+* SO2
